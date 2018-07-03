@@ -1,0 +1,10 @@
+
+<select [(ngModel)]="select_val">
+    <option value="INR_USD">INR_USD</option>
+    <option value="USD_INR">USD_INR</option>
+    <option value="INR_CNY">INR_CNY</option>
+</select>
+
+<input type="text" [(ngModel)]="rs"  value="{{setTextBoxValue}}">
+<button (click)="search(select_val)">Search</button>
+
